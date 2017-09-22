@@ -12,7 +12,7 @@
  * Version 1.00 July, 2016
  */
 
-#ifndef Tadiran_h
+
 #define Tadiran_h
 
 #include <Arduino.h>
@@ -51,7 +51,7 @@ class Tadiran
 {
 	public:
 		// fields
-		unsigned int codes[TADIRAN_BUFFER_SIZE];
+		uint16_t codes[TADIRAN_BUFFER_SIZE];
 		// methods
 		// setter
 		Tadiran(uint8_t _mode, 
@@ -82,4 +82,4 @@ class Tadiran
 		uint8_t bitReverse(uint8_t _value);
 };
 
-#endif;
+
